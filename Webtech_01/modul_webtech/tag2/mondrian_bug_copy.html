@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #wrapper{
+            width: 60vw;
+            height: 60vh;
+            display: flex;
+            background-color:  gray;
+            padding: 0%;
+        
+
+        
+        }
+        .spalte_links{
+            width:50%;
+            height: 100%;
+            
+        }
+        .spalte_rechts{
+            width:50%;
+            height: 100%;
+            
+        }
+
+/* Boxes */
+
+        .bluebox{
+            background-color: rgb(0, 4, 255);
+            height: 40%;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+    
+        .redbox{
+            background-color: rgb(255, 0, 0);
+            height: 40%;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        .whitebox{
+            background-color: rgb(255, 255, 255);
+            height: 20%;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        .blackbox{
+            background-color: rgb(0, 0, 0);
+            height: 20%;
+        }
+
+        .flex {display: flex
+        }
+
+        .quarterbox_yellow{
+            background-color: yellow;
+            height: 100%;
+            width: 100%;
+            justify-items: flex-start;
+            align-items: flex-stq;;
+        }
+
+        .quarterbox_white{
+            background-color: rgb(30, 17, 17);
+            height: 100%;
+            width: 100%;
+            justify-items: flex-end;
+            align-items: flex-;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+
+        .margin_links {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        
+        }
+
+        .margin_rechts {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+    
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="spalte_links">
+            <div class="bluebox"></div>
+            <div class="redbox"></div>
+            <div class="whitebox"></div>
+        </div>
+        <div class="spalte_rechts">
+            <div class="whitebox flex margin_rechts">
+                <div class="quarterbox_yellow"></div>
+                <div class="quarterbox_white"></div>
+        </div>
+        <div class="whitebox yellow margin_rechts"></div>
+        <div class="blackbox margin_rechts"></div>
+        <div class="whitebox margin_rechts"></div>
+        <div class="whitebox margin_rechts margin_unten"></div>
+    </div>
+</body>
+</html>
