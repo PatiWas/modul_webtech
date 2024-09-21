@@ -3,6 +3,10 @@
   @import url("https://use.typekit.net/eah5xwc.css");
 
 
+/* OPTIMIERT ZUR ANSICHT AUF GOOGLE CHROME */
+
+
+
 /* LARGE */
 
 /* styles */
@@ -18,16 +22,17 @@ body {
 h1 {
     font-family: coolvetica;
     font-weight: 400;
-    font-size: 700px;
+    font-size: 35.71400vw;
     line-height: 0%;
 }
 
 h2 {
     font-family: coolvetica;
     font-weight: 400;
-    font-size: 100px;
+    font-size: 5.10200vw;
+
     line-height: 0%;
-    letter-spacing: 5px;
+    letter-spacing: .25500vw;
 }
 
 .green {
@@ -47,7 +52,7 @@ h2 {
 }
 
 .transformo {
-    transform: translate(-0px,-120px);
+    transform: translate(-0px,-6.12200vw);
 }
 
 
@@ -68,151 +73,49 @@ h2 {
 .grbox {
     display: flex;
     grid-area: 1/1/11/11;
-    transform: translate(-100px,-300px);
-    letter-spacing: -20px;
+    transform: translate(-5.10200vw,-15.30600vw);
+    letter-spacing: -1.02000vw;
 }
 
 .abox {
     display: flex;
     grid-area: 1/5/10/10;
-    transform: translate(100px,-500px);
+    transform: translate(5.10200vw,-26.042vw);
 }
 
 .pbox {
     display: flex;
     grid-area: 5/3/10/10;
-    transform: translate(-80px,-250px);
-    letter-spacing: -105px;
+    transform: translate(-4.167vw,-13.021vw);
+    letter-spacing: -5.469vw;
 }
 
 .hbox {
     display: flex;
     grid-area: 5/3/10/10;
-    transform: translate(310px,-370px);
+    transform: translate(16.146vw,-19.271vw);
 }
 
 .isbox {
     display: flex;
     grid-area: 4/6/10/10;
-    transform: translate(-30px,-15px);
-    letter-spacing: 50px;
+    transform: translate(-1.563vw,-0.781vw);
+    letter-spacing: 2.604vw;
 }
 
 .graphis {
     display: flex;
     grid-area: 3/3/5/5;
-    transform: translate(50px,-100px);
+    transform: translate(2.604vw,-5.10200vw);
 }
 
 .ninetynine {
     display: flex;
     grid-area: 4/4/6/6;
-    transform: translate(30px,-60px);
+    transform: translate(1.563vw,-3.125vw);
 }
 
 
 
-
-
-/* MEDIUM */
-
-@media screen and (max-width:960px) {
-
-
-    #gridcontainer {
-        margin-top: -100px;
-    }
-
-    .abox {
-        grid-area: 1/5/10/10;
-        transform: translate(150px,-400px);
-    }
-    
-    .pbox {
-        grid-area: 5/4/10/10;
-        transform: translate(-34px,-250px);
-        letter-spacing: -105px;
-    }
-    
-    .hbox {
-        grid-area: 6/1/10/10;
-        transform: translate(0px,50px);
-    }
-    
-    .isbox {
-        grid-area: 6/7/10/10;
-        transform: translate(-40px,50px);
-        letter-spacing: 0px;
-    }
-    
-    .graphis {
-        grid-area: 4/5/8/8;
-        transform: translate(0px,-40px);
-    }
-    
-    .ninetynine {
-        grid-area: 8/8/10/10;
-        transform: translate(0px,20px);
-    }
-
-
-}
-
-/* SMALL */
-
-@media screen and (max-width:390px) {
-
-    h1 {
-        scale: 60%;
-    }
-    
-    h2 {
-        scale: 60%;
-    }
-    
-    #gridcontainer {
-        margin-top: -100px;
-    }
-
-    .grbox {
-        grid-area: 1/1/10/10;
-        transform: translate(-200px,-300px);
-        letter-spacing: -125px;
-    }
-
-    .abox {
-        grid-area: 1/5/10/10;
-        transform: translate(0px, -400px);
-    }
-    
-    .pbox {
-        grid-area: 5/4/10/10;
-        transform: translate(-65px,-400px);
-        letter-spacing: -350px;
-    }
-    
-    .hbox {
-        grid-area: 5/1/10/10;
-        transform: translate(-80px,-150px);
-    }
-    
-    .isbox {
-        grid-area: 5/7/10/10;
-        transform: translate(-130px,-150px);
-        letter-spacing: 0px;
-    }
-    
-    .graphis {
-        grid-area: 3/5/8/8;
-        transform: translate(-100px,-100px);
-    }
-    
-    .ninetynine {
-        grid-area: 5/8/10/10;
-        transform: translate(0px,0px);
-    }
-
-
-}
 
 
