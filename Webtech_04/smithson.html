@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smithson</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: bisque;
+        }
+
+        .group {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .group:hover .magenta {
+            transform: translate(500px, 0px);
+            rotate: 45deg;
+        }
+
+        .group:hover .cyan {
+            transform: translate(-500px, 0px);
+            rotate: 45deg;
+        }
+
+        .child {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            mix-blend-mode: multiply;
+
+            font-size: 50vw;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .yellow {
+            color: yellow;
+        }
+
+        .magenta {
+            color: magenta;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0,1.47,.99,-1.42);
+        }
+
+
+        .cyan {
+            color: cyan;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+        }
+
+        /* .magenta:hover {
+            transform: translate(500px, 0px);
+        }
+
+        .cyan:hover {
+            transform: translate(-500px, 0px);
+        } */
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="group">
+
+        <div class="child yellow">
+            S
+        </div>
+        <div class="child magenta">
+            S
+        </div>
+        <div class="child cyan">
+            S
+        </div>
+
+    </div>
+
+</body>
+
+</html>

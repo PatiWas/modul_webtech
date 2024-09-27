@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smithson</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: bisque;
+        }
+
+        .group {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            justify-self: center;
+            align-self: center;
+        }
+
+
+        .child {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            mix-blend-mode: multiply;
+
+            font-size: 50vw;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .magenta {
+            color: magenta;
+            animation-name: buchstaberechts;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 3;
+            animation-fill-mode: forwards;
+        }
+
+
+        .cyan {
+            color: cyan;
+            animation-name: buchstabelinks;
+            animation-duration: 2s;
+            animation-direction: reverse;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 3;
+            animation-fill-mode: forwards;
+        }
+
+
+        
+/* ANIMATION */
+
+@keyframes buchstaberechts {
+    0% {
+        transform: translate(0,0);
+    }
+
+    50% {
+        transform: translate(500px, 0);
+    }
+
+    100% {
+        transform: translate(450px, 0);
+    }
+}
+
+@keyframes buchstabelinks {
+    0% {
+        transform: translate(0,0);
+    }
+
+    50% {
+        transform: translate(-500px, 0);
+    }
+
+    100% {
+        transform: translate(-450px, 0);
+    }
+}
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="group">
+
+        <div class="child yellow">
+            S
+        </div>
+        <div class="child magenta">
+            S
+        </div>
+        <div class="child cyan">
+            S
+        </div>
+
+    </div>
+
+</body>
+
+</html>

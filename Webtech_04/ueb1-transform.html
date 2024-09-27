@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+h1 {
+    display: flex;
+   justify-content: center;
+}
+
+.group{
+        display:grid;
+        justify-items: center;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr; 
+    }
+
+.groupflex{
+        display:flex;
+        flex-direction: wrap;
+        justify-content: center;
+        /* grid-template-columns: 1fr; 
+        grid-template-rows: 1fr;  */
+    }
+    
+/* beide elemente liegen ursprünglich übereinander */
+.not_transformed,
+
+.transformed {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        height: 400px;
+        width: 400px;
+    }
+
+    .transformedflex {
+        height: 400px;
+        width: 400px;
+        background-color: greenyellow;
+    }
+
+/* zur visuellen unterscheidung zwei unterschiedliche stile zuweisen */
+            
+.not_transformed {
+        background-color: black;
+    }
+.transformed {
+        background-color: rgba(0, 0, 255, 0.5);
+    }
+
+.verschieben {
+    transform: translate(100px, 200px);
+    }
+
+.rotate {
+    transform: rotate(45deg);
+    transform-origin: top left;
+    /* transform-origin: 50px 50px; */
+}
+
+.scale {
+    transform:scale(0.8, 2); 
+}
+
+.skew {
+    /* transform:skewX(10deg);  */
+    transform:skew(20deg, -10deg);
+}
+
+.crazy {
+    transform: scale(3, 0.5) skew(50deg, -20deg);
+}
+
+
+
+/* 3D */
+
+.perspective {
+    /* transform: perspective(400px) rotateY(45deg); */
+    perspective: 500px;
+    transform: rotateY(45deg);
+}
+
+
+
+/* TRANSITION */
+
+.verschieben {
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    }
+
+.group:hover .verschieben {
+    transform: translate(100px, 200px);
+}
+
+/* .transformed { 
+    height: 500px; 
+    background-color:lightblue;  
+    transition-property: all;
+    transition-duration: 1s; 
+    transition-timing-function: ease-in-out; 
+    transition-delay: 0.5s;
+}
+
+.transformed:hover{ 
+    background-color:black; 
+    transform: translate(100px, 200px);
+} */
+
+</style>
+
+
+</head>
+<body>
+    
+    <section>
+        <h1>Verschieben</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed verschieben">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>Rotation</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed rotate">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>Scale</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed scale">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>Skew</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed skew">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>Crazy</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed crazy">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>3D Perspective</h1>
+        <div class="groupflex perspective">
+            <div class="transformedflex perspective">
+            </div>
+            <div class="transformedflex perspective">
+            </div>
+            <div class="transformedflex perspective">
+            </div>
+            <div class="transformedflex perspective">
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
