@@ -88,7 +88,7 @@ h2 {
     color: #ffffff00;
     animation-name: flickerwhite;
     animation-duration: 1s;
-    animation-delay: 1500ms;
+    animation-delay: 300ms;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -140,6 +140,14 @@ h2 {
     animation-timing-function: linear;
     animation-fill-mode: backwards;
     animation-delay: 1500ms;
+}
+
+.flickerwhite {
+    animation-name: flickerwhite;
+}
+
+.no-animation {
+    animation: none;
 }
 
 
