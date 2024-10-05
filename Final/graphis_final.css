@@ -347,8 +347,8 @@ h2 {
 
     .obox {
         display: flex;
-        grid-area: 4/2/10/10;
-        transform: translate(-30px, -370px);
+        grid-area: 4/3/8/8;
+        transform: translate(-70px, -370px);
     }
 
     .abox {
